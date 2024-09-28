@@ -1,0 +1,23 @@
+{
+  "name": "hackthehill2",
+  "version": "1.0.0",
+  "description": "Duolingo clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnehm006/hackbibis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cnehm006/hackbibis/issues"
+  },
+  "homepage": "https://github.com/cnehm006/hackbibis#readme",
+  "dependencies": {
+    "firebase": "^10.13.2"
+  }
+}
