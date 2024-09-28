@@ -1,3 +1,4 @@
+// Firebase configuration for Hackbibi project
 const firebaseConfig = {
   apiKey: "AIzaSyAeVO91EBeTQl-Ritjsg0tZPfQ2m0Aj6wE",
   authDomain: "hackbibi-b355d.firebaseapp.com",
@@ -17,9 +18,11 @@ const storage = firebase.storage();
 // Check if user is authenticated
 auth.onAuthStateChanged((user) => {
   if (user) {
+    // User is authenticated, show their email on the page
     document.getElementById("user-email").textContent = user.email;
   } else {
-    window.location.href = "login.html"; // Redirect to login if not logged in
+    // User is not authenticated, redirect to index.html (login/signup page)
+    window.location.href = "index.html";
   }
 });
 
@@ -27,7 +30,8 @@ auth.onAuthStateChanged((user) => {
 const logoutBtn = document.getElementById("logout-btn");
 logoutBtn.addEventListener("click", () => {
   auth.signOut().then(() => {
-    window.location.href = "login.html"; // Redirect to login on logout
+    // After logging out, redirect to index.html
+    window.location.href = "index.html";
   });
 });
 
