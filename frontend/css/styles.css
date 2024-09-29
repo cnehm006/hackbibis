@@ -1,5 +1,7 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -48,15 +50,15 @@ button:hover {
 footer {
     margin-top: 50px;
     padding: 20px;
-
     color: #555;
     font-size: 14px;
 }
 
 header {
-    background-color: #f9cb9c; /* Example background color */
-    margin: 0;
-
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .custom-heading {
@@ -76,6 +78,18 @@ header {
     z-index:1;
 }
 
+.custom-heading {
+    padding-top: 5rem;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 2;
+    color: #117d7c; 
+    font-family: 'Pacifico';
+    font-size: 3rem;
+    text-align: left;
+}
+
 header h1 {
     margin: 0;
     font-size: 24px;
@@ -83,10 +97,12 @@ header h1 {
 
 
 .wave {
-bottom: 0;
-left: 0;
-background-size: cover;  
-z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%; 
+    height: auto;
+    z-index: 1;
 }
 
 #auth-box {
@@ -120,7 +136,6 @@ input[type=text] {
     border-radius: 4px;
   }
 
-/* Hide the sign-up form by default */
 #signup-form {
     color: #e69138ff;
     display: none;
