@@ -8,6 +8,9 @@ body {
     margin-top: 50px;
     background-image: url("/frontend/media/login_back.png");
     font: "/font/Unique-VF.tff";
+    height: 100%;
+    margin: 0; 
+    padding: 0;
     
 }
 
@@ -51,13 +54,39 @@ footer {
 }
 
 header {
-    padding: 20px;
-    margin-bottom: 30px;
+    background-color: #f9cb9c; /* Example background color */
+    margin: 0;
+
+}
+
+.custom-heading {
+    position: relative; 
+    z-index: 1; 
+    color: #117d7c; 
+    font-family: 'Pacifico';
+    font-size: 3rem; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.custom-heading {
+    font-family: 'Pacifico';
+    color: #117d7c;
+    font-size: 3.0rem;
+    z-index:1;
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
+}
+
+
+.wave {
+bottom: 0;
+left: 0;
+background-size: cover;  
+z-index: -1;
 }
 
 #auth-box {
