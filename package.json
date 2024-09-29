@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/cnehm006/hackbibis#readme",
   "dependencies": {
-    "firebase": "^10.13.2"
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase": "^10.13.2",
+    "openai": "^4.65.0"
   }
 }

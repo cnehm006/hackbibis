@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Dashboard</h1>
+        <div id="profile-section">
+            <span id="user-email"></span>
+            <button id="logout-btn">Log Out</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- File Upload Section -->
+        <section id="file-upload-section">
+            <h2>Upload Your Course Materials</h2>
+            <form id="file-upload-form">
+                <input type="file" id="file-upload" accept=".pdf, .xml, .png, .txt" />
+                <button type="button" id="upload-btn">Upload File</button>
+            </form>
+            <p id="upload-message"></p>
+        </section>
+
+        <!-- Exam Date Input Section -->
+        <section id="exam-date-section">
+            <h2>Set Your Exam Date</h2>
+            <input type="date" id="exam-date" />
+        </section>
+
+        <!-- Generate Questions Section -->
+        <section id="generate-questions-section">
+            <h2>Generated Questions</h2>
+            <button type="button" id="generate-btn">Generate Questions</button> <!-- New button to generate questions -->
+            <div id="questions-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our App</p>
+    </footer>
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <!-- Link to external JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
