@@ -1,7 +1,12 @@
+*{
+    background-image: url("media/login_back.png");
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    
 }
 
 input[type="email"], input[type="password"], input[type="file"] {
@@ -14,7 +19,7 @@ button {
     padding: 10px;
     margin: 10px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #e69138ff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -38,13 +43,13 @@ button:hover {
 footer {
     margin-top: 50px;
     padding: 20px;
-    background-color: #f4f4f4;
+
     color: #555;
     font-size: 14px;
 }
 
 header {
-    background-color: #f4f4f4;
+  
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -55,36 +60,44 @@ header h1 {
 }
 
 #auth-box {
+
+    color: #e69138ff;
     width: 300px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1mm solid;
+    border-radius: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #auth-box h3 {
     margin-bottom: 20px;
+    color: #e69138ff;
 }
 
 #auth-box p {
+    color:#e69138ff;
     font-size: 14px;
     margin-top: 10px;
 }
 
+input[type=text] {
+    border: 2px #e69138ff;
+    border-radius: 4px;
+  }
+
 /* Hide the sign-up form by default */
 #signup-form {
+    color: #e69138ff;
     display: none;
 }
 
 #login-form {
+    color: #e69138ff;
     display: block;
 }
 
-footer {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    color: #555;
-    font-size: 14px;
-}
