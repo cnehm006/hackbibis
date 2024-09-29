@@ -1,11 +1,12 @@
 *{
-    background-image: url("media/login_back.png");
+
 }
 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    background-image: url("/frontend/media/login_back.png");
     
 }
 
@@ -49,7 +50,6 @@ footer {
 }
 
 header {
-  
     padding: 20px;
     margin-bottom: 30px;
 }
