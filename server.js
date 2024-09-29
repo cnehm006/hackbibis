@@ -1,5 +1,5 @@
 const express = require("express");
-const { Configuration, OpenAIApi } = require("openai");
+const { OpenAIApi } = require('openai');
 const cors = require("cors");
 const path = require("path");
 
@@ -7,11 +7,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Initialize OpenAI API with API key
-const configuration = new Configuration({apiKey: "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" // Replace with your actual OpenAI API key
+const openai = new OpenAIApi({
+  api_key: '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'
 });
-
-const openai = new OpenAIApi(configuration);
 
 // Serve frontend files
 app.use(express.static(path.join(__dirname, "frontend")));
